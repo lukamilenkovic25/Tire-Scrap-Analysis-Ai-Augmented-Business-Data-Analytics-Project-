@@ -40,12 +40,11 @@ Data was intentionally “dirty” to simulate a real manufacturing environment
 ---
 
 ## 4. Data Model (Power BI)
-### Calculated Columns
+### Calculated Columns & Measures
+```DAX
 MonthName = FORMAT('ScrapData'[Date], "MMM")
 MonthNumber = MONTH('ScrapData'[Date])
 
-### Measures
-```DAX
 Total Scrap KG = SUM('ScrapData'[Scrap_KG])
 Total Scrap Cost = SUM('ScrapData'[Scrap_Cost_EUR])
 Avg Scrap per Day = AVERAGEX(VALUES('ScrapData'[Date]), CALCULATE([Total Scrap KG]))
