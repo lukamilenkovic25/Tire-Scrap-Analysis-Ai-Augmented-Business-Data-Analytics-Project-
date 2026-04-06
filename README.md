@@ -41,10 +41,8 @@ Data was intentionally “dirty” to simulate a real manufacturing environment
 
 ## 4. Data Model (Power BI)
 ### Calculated Columns
-```DAX
 MonthName = FORMAT('ScrapData'[Date], "MMM")
 MonthNumber = MONTH('ScrapData'[Date])
-``
 
 ### Measures
 ```DAX
