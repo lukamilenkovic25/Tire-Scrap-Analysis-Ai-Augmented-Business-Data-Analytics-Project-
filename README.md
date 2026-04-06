@@ -45,9 +45,10 @@ Data was intentionally “dirty” to simulate a real manufacturing environment
 - MonthNumber = MONTH('ScrapData'[Date])
 
 ### Measures
-- Total Scrap KG = SUM('ScrapData'[Scrap_KG])
-- Total Scrap Cost = SUM('ScrapData'[Scrap_Cost_EUR])
-- Avg Scrap per Day = AVERAGEX(VALUES('ScrapData'[Date]), CALCULATE([Total Scrap KG]))
-- Scrap Cost per KG = DIVIDE([Total Scrap Cost], [Total Scrap KG])
-
+```DAX
+Total Scrap KG = SUM('ScrapData'[Scrap_KG])
+Total Scrap Cost = SUM('ScrapData'[Scrap_Cost_EUR])
+Avg Scrap per Day = AVERAGEX(VALUES('ScrapData'[Date]), CALCULATE([Total Scrap KG]))
+Scrap Cost per KG = DIVIDE([Total Scrap Cost], [Total Scrap KG])
+``
 ---
