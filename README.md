@@ -45,6 +45,8 @@ Data was intentionally “dirty” to simulate a real manufacturing environment
 MonthName = FORMAT('ScrapData'[Date], "MMM")
 MonthNumber = MONTH('ScrapData'[Date])
 
+``
+
 ### Measures
 ```DAX
 
