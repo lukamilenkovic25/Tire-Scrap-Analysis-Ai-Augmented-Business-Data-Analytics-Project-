@@ -1,4 +1,4 @@
-# Tire Scrap Analysis - Portfolio
+# Manufacturing Scrap Analysis - Au-Augmented Power BI
 ## Project Overview ##
 This project focuses on analyzing scrap generation in a tire manufacturing environment using Power BI and AI‑driven analytics.
 Scrap represents a significant cost leak in manufacturing operations, directly impacting profitability, efficiency, and product quality.
